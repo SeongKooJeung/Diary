@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="일기장"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 이전에 작성한 일기 내용을 표시하는 TextView -->
+            <TextView
+                android:id="@+id/textViewDiaryContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 새로운 일기 작성 버튼 -->
+    <Button
+        android:id="@+id/buttonAddDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새로운 일기 작성"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 음성 인식 버튼 -->
+    <Button
+        android:id="@+id/buttonVoiceToText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="음성으로 작성"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>
+
